@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CalculadoraDePromedios.Models
+﻿namespace CalculadoraDePromedios.Models
 {
-    internal class RegistroReprobatorio
+    // La sintaxis ": Registro" significa que esta clase HEREDA de la clase Registro
+    public class RegistroReprobatorio : Registro
     {
+        // Esta clase tiene todas las propiedades de Registro, y además...
+        public float CalificacionEstimadaDeAprobacion { get; set; }
     }
 }
